@@ -12,6 +12,6 @@ class StartModeration extends Validator{
 
         static::validateArray($input, "content");
         static::validateArray($input, "customer");
-        static::validateURL($input, "content");
+        static::validateURL($input["content"], "url");
     }
 }
